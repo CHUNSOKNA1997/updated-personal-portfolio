@@ -53,7 +53,7 @@ export default function Home() {
 			<div
 				className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
 				style={{
-					background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+					background: `radial-gradient(800px at ${mousePosition.x}px ${mousePosition.y}px, rgba(6, 182, 212, 0.12), transparent 70%)`,
 				}}
 			></div>
 
@@ -63,14 +63,15 @@ export default function Home() {
 					<header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
 						<div>
 							<h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
-								Brittany Chiang
+								<span className="text-gradient bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Your Name</span>
 							</h1>
 							<h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-								Front End Engineer
+								Full Stack Developer & Creative Technologist
 							</h2>
 							<p className="mt-4 max-w-xs leading-normal text-slate-400">
-								I build accessible, pixel-perfect digital
-								experiences for the web.
+								I craft innovative digital solutions that bridge
+								creativity and technology, building scalable
+								applications with modern tools.
 							</p>
 
 							{/* Navigation */}
@@ -152,6 +153,30 @@ export default function Home() {
 									</li>
 								</ul>
 							</nav>
+
+							{/* Tech Stack */}
+							<div className="mt-16 hidden lg:block">
+								<p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">
+									Tech Stack
+								</p>
+								<div className="flex flex-wrap gap-2">
+									<span className="inline-flex items-center rounded-md bg-cyan-400/10 px-2 py-1 text-xs font-medium text-cyan-400 ring-1 ring-inset ring-cyan-400/20">
+										React
+									</span>
+									<span className="inline-flex items-center rounded-md bg-cyan-400/10 px-2 py-1 text-xs font-medium text-cyan-400 ring-1 ring-inset ring-cyan-400/20">
+										TypeScript
+									</span>
+									<span className="inline-flex items-center rounded-md bg-cyan-400/10 px-2 py-1 text-xs font-medium text-cyan-400 ring-1 ring-inset ring-cyan-400/20">
+										Node.js
+									</span>
+									<span className="inline-flex items-center rounded-md bg-cyan-400/10 px-2 py-1 text-xs font-medium text-cyan-400 ring-1 ring-inset ring-cyan-400/20">
+										AWS
+									</span>
+									<span className="inline-flex items-center rounded-md bg-cyan-400/10 px-2 py-1 text-xs font-medium text-cyan-400 ring-1 ring-inset ring-cyan-400/20">
+										Docker
+									</span>
+								</div>
+							</div>
 						</div>
 
 						{/* Social Links */}
@@ -272,39 +297,37 @@ export default function Home() {
 							</div>
 							<div>
 								<p className="mb-4">
-									I&apos;m a developer passionate about
-									crafting accessible, pixel-perfect user
-									interfaces that blend thoughtful design with
-									robust engineering. My favorite work lies at
-									the intersection of design and development,
-									creating experiences that not only look
-									great but are meticulously built for
-									performance and usability.
+									I&apos;m a versatile developer who thrives
+									at the intersection of innovation and
+									implementation. With a passion for clean code
+									and elegant design patterns, I specialize in
+									building modern web applications that scale.
+									My approach combines technical excellence
+									with creative problem-solving to deliver
+									exceptional digital experiences.
 								</p>
 								<p className="mb-4">
-									Currently, I&apos;m a Senior Front-End
-									Engineer at{" "}
+									Currently, I&apos;m focused on{" "}
 									<a
-										className="font-medium text-slate-200 hover:text-teal-400 focus-visible:text-teal-400"
-										href="https://www.klaviyo.com/"
+										className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
+										href="#"
 										target="_blank"
 										rel="noreferrer"
 									>
-										Klaviyo
-									</a>
-									, specializing in accessibility. I
-									contribute to the creation and maintenance
-									of UI components that power Klaviyo&apos;s
-									frontend, ensuring our platform meets web
-									accessibility standards and best practices
-									to deliver an inclusive user experience.
+										cloud-native architectures
+									</a>{" "}
+									and developing AI-powered solutions that
+									transform how businesses operate. I work with
+									cutting-edge technologies including React,
+									Node.js, TypeScript, and cloud platforms to
+									build robust, scalable applications.
 								</p>
 								<p className="mb-4">
 									In the past, I&apos;ve had the opportunity
 									to develop software across a variety of
 									settings — from{" "}
 									<a
-										className="font-medium text-slate-200 hover:text-teal-400 focus-visible:text-teal-400"
+										className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
 										href="https://us.mullenlowe.com/"
 										target="_blank"
 										rel="noreferrer"
@@ -313,7 +336,7 @@ export default function Home() {
 									</a>{" "}
 									and{" "}
 									<a
-										className="font-medium text-slate-200 hover:text-teal-400 focus-visible:text-teal-400"
+										className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
 										href="https://www.apple.com/apple-music/"
 										target="_blank"
 										rel="noreferrer"
@@ -322,7 +345,7 @@ export default function Home() {
 									</a>{" "}
 									to{" "}
 									<a
-										className="font-medium text-slate-200 hover:text-teal-400 focus-visible:text-teal-400"
+										className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
 										href="https://starry.com/"
 										target="_blank"
 										rel="noreferrer"
@@ -331,7 +354,7 @@ export default function Home() {
 									</a>{" "}
 									and{" "}
 									<a
-										className="font-medium text-slate-200 hover:text-teal-400 focus-visible:text-teal-400"
+										className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
 										href="https://upstatement.com/"
 										target="_blank"
 										rel="noreferrer"
@@ -340,7 +363,7 @@ export default function Home() {
 									</a>
 									. Additionally, I also released a{" "}
 									<a
-										className="font-medium text-slate-200 hover:text-teal-400 focus-visible:text-teal-400"
+										className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
 										href="https://www.newline.co/courses/build-a-spotify-connected-app"
 										target="_blank"
 										rel="noreferrer"
@@ -356,7 +379,7 @@ export default function Home() {
 									two cats, or running around Hyrule searching
 									for{" "}
 									<a
-										className="font-medium text-slate-200 hover:text-teal-400 focus-visible:text-teal-400"
+										className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
 										href="https://www.zelda.com/breath-of-the-wild/"
 										target="_blank"
 										rel="noreferrer"
@@ -389,13 +412,13 @@ export default function Home() {
 												className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
 												aria-label="2024 to Present"
 											>
-												2024 — Present
+												2023 — Present
 											</header>
 											<div className="z-10 sm:col-span-6">
 												<h3 className="font-medium leading-snug text-slate-200">
 													<div>
 														<a
-															className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-400 focus-visible:text-teal-400 group/link text-base"
+															className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400 group/link text-base"
 															href="https://www.klaviyo.com"
 															target="_blank"
 															rel="noreferrer"
@@ -403,11 +426,10 @@ export default function Home() {
 														>
 															<span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
 															<span>
-																Senior Frontend
-																Engineer,
-																Accessibility ·{" "}
+																Lead Full Stack
+																Developer ·{" "}
 																<span className="inline-block">
-																	Klaviyo
+																	TechCorp
 																	<svg
 																		xmlns="http://www.w3.org/2000/svg"
 																		viewBox="0 0 20 20"
@@ -444,22 +466,22 @@ export default function Home() {
 													aria-label="Technologies used"
 												>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															JavaScript
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															TypeScript
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															React
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															Storybook
 														</div>
 													</li>
@@ -482,7 +504,7 @@ export default function Home() {
 												<h3 className="font-medium leading-snug text-slate-200">
 													<div>
 														<a
-															className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-400 focus-visible:text-teal-400 group/link text-base"
+															className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400 group/link text-base"
 															href="https://upstatement.com"
 															target="_blank"
 															rel="noreferrer"
@@ -544,52 +566,52 @@ export default function Home() {
 													aria-label="Technologies used"
 												>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															JavaScript
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															TypeScript
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															HTML & SCSS
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															React
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															Next.js
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															React Native
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															WordPress
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															Contentful
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															Node.js
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															PHP
 														</div>
 													</li>
@@ -612,7 +634,7 @@ export default function Home() {
 												<h3 className="font-medium leading-snug text-slate-200">
 													<div>
 														<a
-															className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-400 focus-visible:text-teal-400 group/link text-base"
+															className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400 group/link text-base"
 															href="https://www.apple.com/apple-music/"
 															target="_blank"
 															rel="noreferrer"
@@ -657,22 +679,22 @@ export default function Home() {
 													aria-label="Technologies used"
 												>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															Ember
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															SCSS
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															JavaScript
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															MusicKit.js
 														</div>
 													</li>
@@ -688,11 +710,11 @@ export default function Home() {
 										href="/resume.pdf"
 									>
 										<span>
-											<span className="border-b border-transparent pb-px transition group-hover:border-teal-400 motion-reduce:transition-none">
+											<span className="border-b border-transparent pb-px transition group-hover:border-cyan-400 motion-reduce:transition-none">
 												View Full{" "}
 											</span>
 											<span className="whitespace-nowrap">
-												<span className="border-b border-transparent pb-px transition group-hover:border-teal-400 motion-reduce:transition-none">
+												<span className="border-b border-transparent pb-px transition group-hover:border-cyan-400 motion-reduce:transition-none">
 													Résumé
 												</span>
 												<svg
@@ -735,7 +757,7 @@ export default function Home() {
 											<div className="z-10 sm:order-2 sm:col-span-6">
 												<h3>
 													<a
-														className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-400 focus-visible:text-teal-400 group/link text-base"
+														className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400 group/link text-base"
 														href="https://www.newline.co/courses/build-a-spotify-connected-app"
 														target="_blank"
 														rel="noreferrer"
@@ -743,8 +765,8 @@ export default function Home() {
 													>
 														<span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
 														<span>
-															Build a Spotify
-															Connected App{" "}
+															AI-Powered Task
+															Management Platform{" "}
 															<svg
 																xmlns="http://www.w3.org/2000/svg"
 																viewBox="0 0 20 20"
@@ -789,7 +811,7 @@ export default function Home() {
 											<div className="z-10 sm:order-2 sm:col-span-6">
 												<h3>
 													<a
-														className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-400 focus-visible:text-teal-400 group/link text-base"
+														className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400 group/link text-base"
 														href="https://spotify-profile.herokuapp.com/"
 														target="_blank"
 														rel="noreferrer"
@@ -831,22 +853,22 @@ export default function Home() {
 													aria-label="Technologies used"
 												>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															React
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															Express
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															Spotify API
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															Heroku
 														</div>
 													</li>
@@ -869,7 +891,7 @@ export default function Home() {
 											<div className="z-10 sm:order-2 sm:col-span-6">
 												<h3>
 													<a
-														className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-400 focus-visible:text-teal-400 group/link text-base"
+														className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400 group/link text-base"
 														href="https://halcyon-theme.netlify.app/"
 														target="_blank"
 														rel="noreferrer"
@@ -920,7 +942,7 @@ export default function Home() {
 											<div className="z-10 sm:order-2 sm:col-span-6">
 												<h3>
 													<a
-														className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-400 focus-visible:text-teal-400 group/link text-base"
+														className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400 group/link text-base"
 														href="https://v4.brittanychiang.com/"
 														target="_blank"
 														rel="noreferrer"
@@ -956,17 +978,17 @@ export default function Home() {
 													aria-label="Technologies used"
 												>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															Gatsby
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															Styled Components
 														</div>
 													</li>
 													<li className="mr-1.5 mt-2">
-														<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400">
+														<div className="flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-400">
 															Netlify
 														</div>
 													</li>
@@ -989,11 +1011,11 @@ export default function Home() {
 										href="/archive"
 									>
 										<span>
-											<span className="border-b border-transparent pb-px transition group-hover:border-teal-400 motion-reduce:transition-none">
+											<span className="border-b border-transparent pb-px transition group-hover:border-cyan-400 motion-reduce:transition-none">
 												View Full Project{" "}
 											</span>
 											<span className="whitespace-nowrap">
-												<span className="border-b border-transparent pb-px transition group-hover:border-teal-400 motion-reduce:transition-none">
+												<span className="border-b border-transparent pb-px transition group-hover:border-cyan-400 motion-reduce:transition-none">
 													Archive
 												</span>
 												<svg
@@ -1022,7 +1044,7 @@ export default function Home() {
 								Loosely designed in{" "}
 								<a
 									href="https://www.figma.com/"
-									className="font-medium text-slate-400 hover:text-teal-400 focus-visible:text-teal-400"
+									className="font-medium text-slate-400 hover:text-cyan-400 focus-visible:text-cyan-400"
 									target="_blank"
 									rel="noreferrer"
 								>
@@ -1031,7 +1053,7 @@ export default function Home() {
 								and coded in{" "}
 								<a
 									href="https://code.visualstudio.com/"
-									className="font-medium text-slate-400 hover:text-teal-400 focus-visible:text-teal-400"
+									className="font-medium text-slate-400 hover:text-cyan-400 focus-visible:text-cyan-400"
 									target="_blank"
 									rel="noreferrer"
 								>
@@ -1040,7 +1062,7 @@ export default function Home() {
 								by yours truly. Built with{" "}
 								<a
 									href="https://nextjs.org/"
-									className="font-medium text-slate-400 hover:text-teal-400 focus-visible:text-teal-400"
+									className="font-medium text-slate-400 hover:text-cyan-400 focus-visible:text-cyan-400"
 									target="_blank"
 									rel="noreferrer"
 								>
@@ -1049,7 +1071,7 @@ export default function Home() {
 								and{" "}
 								<a
 									href="https://tailwindcss.com/"
-									className="font-medium text-slate-400 hover:text-teal-400 focus-visible:text-teal-400"
+									className="font-medium text-slate-400 hover:text-cyan-400 focus-visible:text-cyan-400"
 									target="_blank"
 									rel="noreferrer"
 								>
@@ -1058,7 +1080,7 @@ export default function Home() {
 								, deployed with{" "}
 								<a
 									href="https://vercel.com/"
-									className="font-medium text-slate-400 hover:text-teal-400 focus-visible:text-teal-400"
+									className="font-medium text-slate-400 hover:text-cyan-400 focus-visible:text-cyan-400"
 									target="_blank"
 									rel="noreferrer"
 								>
@@ -1067,7 +1089,7 @@ export default function Home() {
 								. All text is set in the{" "}
 								<a
 									href="https://rsms.me/inter/"
-									className="font-medium text-slate-400 hover:text-teal-400 focus-visible:text-teal-400"
+									className="font-medium text-slate-400 hover:text-cyan-400 focus-visible:text-cyan-400"
 									target="_blank"
 									rel="noreferrer"
 								>

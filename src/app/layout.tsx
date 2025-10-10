@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Brittany Chiang - Front End Engineer",
-	description: "Brittany Chiang is a front-end engineer who builds accessible, pixel-perfect digital experiences for the web.",
+	title: "Your Name - Full Stack Developer",
+	description: "Full Stack Developer specializing in modern web technologies, cloud architecture, and AI-powered solutions.",
 };
 
 export default function RootLayout({

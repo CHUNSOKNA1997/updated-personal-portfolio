@@ -33,32 +33,36 @@
 		background-color: rgba(30, 41, 59, 0.5);
 	}
 
-	.text-teal-400 {
-		color: #5eead4;
+	.text-cyan-400 {
+		color: #22d3ee;
 	}
 
-	.bg-teal-400\/10 {
-		background-color: rgba(94, 234, 212, 0.1);
+	.text-blue-400 {
+		color: #60a5fa;
 	}
 
-	.hover\:text-teal-400:hover {
-		color: #5eead4;
+	.bg-cyan-400\/10 {
+		background-color: rgba(34, 211, 238, 0.1);
 	}
 
-	.focus-visible\:text-teal-400:focus-visible {
-		color: #5eead4;
+	.hover\:text-cyan-400:hover {
+		color: #22d3ee;
+	}
+
+	.focus-visible\:text-cyan-400:focus-visible {
+		color: #22d3ee;
 	}
 
 	.hover\:bg-slate-800\/50:hover {
 		background-color: rgba(30, 41, 59, 0.5);
 	}
 
-	.hover\:border-teal-400:hover {
-		border-color: #5eead4;
+	.hover\:border-cyan-400:hover {
+		border-color: #22d3ee;
 	}
 
-	.group-hover\:text-teal-400:hover .group:hover {
-		color: #5eead4;
+	.group-hover\:text-cyan-400:hover .group:hover {
+		color: #22d3ee;
 	}
 
 	.group-hover\:bg-slate-200:hover .group:hover {
