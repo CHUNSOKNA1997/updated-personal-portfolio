@@ -63,15 +63,17 @@ export default function Home() {
 					<header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
 						<div>
 							<h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
-								<span className="text-gradient bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Your Name</span>
+								<span className="text-gradient bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+									SOKNA Chun
+								</span>
 							</h1>
 							<h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-								Full Stack Developer & Creative Technologist
+								Junior Software Developer
 							</h2>
 							<p className="mt-4 max-w-xs leading-normal text-slate-400">
-								I craft innovative digital solutions that bridge
-								creativity and technology, building scalable
-								applications with modern tools.
+								I am a junior web developer passionate about
+								building reliable and user-friendly websites
+								with modern technologies.
 							</p>
 
 							{/* Navigation */}
@@ -299,12 +301,13 @@ export default function Home() {
 								<p className="mb-4">
 									I&apos;m a versatile developer who thrives
 									at the intersection of innovation and
-									implementation. With a passion for clean code
-									and elegant design patterns, I specialize in
-									building modern web applications that scale.
-									My approach combines technical excellence
-									with creative problem-solving to deliver
-									exceptional digital experiences.
+									implementation. With a passion for clean
+									code and elegant design patterns, I
+									specialize in building modern web
+									applications that scale. My approach
+									combines technical excellence with creative
+									problem-solving to deliver exceptional
+									digital experiences.
 								</p>
 								<p className="mb-4">
 									Currently, I&apos;m focused on{" "}
@@ -317,10 +320,11 @@ export default function Home() {
 										cloud-native architectures
 									</a>{" "}
 									and developing AI-powered solutions that
-									transform how businesses operate. I work with
-									cutting-edge technologies including React,
-									Node.js, TypeScript, and cloud platforms to
-									build robust, scalable applications.
+									transform how businesses operate. I work
+									with cutting-edge technologies including
+									React, Node.js, TypeScript, and cloud
+									platforms to build robust, scalable
+									applications.
 								</p>
 								<p className="mb-4">
 									In the past, I&apos;ve had the opportunity
