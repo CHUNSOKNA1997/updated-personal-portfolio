@@ -1,0 +1,17 @@
+export const techStack: string[] = [
+	"React",
+	"Next.js",
+	"Vue.js",
+	"TypeScript",
+	"JavaScript",
+	"Tailwind CSS",
+	"Laravel",
+	"PHP",
+	"Node.js",
+	"Express.js",
+	"Inertia.js",
+	"Prisma",
+	"MySQL",
+	"PostgreSQL",
+	"Git",
+];

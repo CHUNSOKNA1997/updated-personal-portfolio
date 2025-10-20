@@ -17,6 +17,11 @@ const nextConfig: NextConfig = {
         hostname: 'ext.same-assets.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
+      },
     ],
   },
 };
