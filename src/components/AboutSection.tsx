@@ -5,99 +5,32 @@ export default function AboutSection() {
 			className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
 			aria-label="About me"
 		>
-			<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-[#0c142c]/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0">
+			<div className="sticky top-0 z-20 -mx-6 mb-8 w-screen bg-[#0c142c]/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0">
 				<h2 className="text-sm font-bold uppercase tracking-widest text-slate-200">
 					About
 				</h2>
 			</div>
 			<div>
 				<p className="mb-4">
-					I&apos;m a versatile developer who thrives at the
-					intersection of innovation and implementation. With a
-					passion for clean code and elegant design patterns, I
-					specialize in building modern web applications that
-					scale. My approach combines technical excellence with
-					creative problem-solving to deliver exceptional digital
-					experiences.
+					I&apos;m a <strong className="text-slate-200">4th Year Computer Science student</strong> at Royal University of Phnom Penh, 
+					passionate about building scalable and modern web applications. Expected graduation in 2026.
 				</p>
 				<p className="mb-4">
-					Currently, I&apos;m focused on{" "}
-					<a
-						className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
-						href="#"
-						target="_blank"
-						rel="noreferrer"
-					>
-						cloud-native architectures
-					</a>{" "}
-					and developing AI-powered solutions that transform how
-					businesses operate. I work with cutting-edge
-					technologies including React, Node.js, TypeScript, and
-					cloud platforms to build robust, scalable applications.
+					As a Software Engineer based in <strong className="text-slate-200">Phnom Penh, Cambodia</strong>, 
+					I specialize in full-stack development with expertise in both frontend and backend technologies. 
+					I work with <strong className="text-slate-200">React, Next.js, Vue.js, Laravel, and Node.js</strong> to 
+					build robust and user-friendly web applications.
 				</p>
 				<p className="mb-4">
-					In the past, I&apos;ve had the opportunity to develop
-					software across a variety of settings — from{" "}
-					<a
-						className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
-						href="https://us.mullenlowe.com/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						advertising agencies
-					</a>{" "}
-					and{" "}
-					<a
-						className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
-						href="https://www.apple.com/apple-music/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						large corporations
-					</a>{" "}
-					to{" "}
-					<a
-						className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
-						href="https://starry.com/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						start-ups
-					</a>{" "}
-					and{" "}
-					<a
-						className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
-						href="https://upstatement.com/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						small digital product studios
-					</a>
-					. Additionally, I also released a{" "}
-					<a
-						className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
-						href="https://www.newline.co/courses/build-a-spotify-connected-app"
-						target="_blank"
-						rel="noreferrer"
-					>
-						comprehensive video course
-					</a>{" "}
-					a few years ago, guiding learners through building a
-					web app with the Spotify API.
+					My development approach focuses on writing clean, maintainable code while leveraging modern frameworks 
+					and best practices. I&apos;m experienced with <strong className="text-slate-200">Inertia.js</strong> for 
+					building seamless SPA experiences, <strong className="text-slate-200">Prisma</strong> for database management, 
+					and integrating payment systems like <strong className="text-slate-200">PayWay KHQR</strong>.
 				</p>
 				<p>
-					In my spare time, I&apos;m usually climbing, playing
-					tennis, hanging out with my wife and two cats, or
-					running around Hyrule searching for{" "}
-					<a
-						className="font-medium text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400"
-						href="https://www.zelda.com/breath-of-the-wild/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						Korok seeds
-					</a>
-					.
+					When I&apos;m not coding, I enjoy exploring new technologies, contributing to open-source projects, 
+					and continuously improving my skills to deliver better solutions. I&apos;m always eager to take on 
+					challenging projects that push the boundaries of web development.
 				</p>
 			</div>
 		</section>

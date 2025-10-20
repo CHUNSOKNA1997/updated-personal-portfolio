@@ -2,37 +2,39 @@ import { Project } from "./types";
 
 export const projects: Project[] = [
 	{
-		title: "AI-Powered Task Management Platform",
+		title: "E-News Platform",
 		description:
-			"Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
-		link: "https://www.newline.co/courses/build-a-spotify-connected-app",
-		imageUrl: "https://ext.same-assets.com/1031784112/3267000279.png",
-		imageAlt: "Build a Spotify Connected App course",
+			"A modern news management system built with Inertia.js, React, and Laravel for seamless SPA experience without API complexity. Features CRUD operations, user authentication, rich-text editing, image uploads, and responsive design.",
+		link: "https://github.com/CHUNSOKNA1997/e-news-platform",
+		imageUrl: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400",
+		imageAlt: "E-News Platform",
+		technologies: ["React", "Laravel", "Inertia.js", "Tailwind CSS"],
 	},
 	{
-		title: "Spotify Profile",
+		title: "School Registration System API",
 		description:
-			"Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
-		link: "https://spotify-profile.herokuapp.com/",
-		imageUrl: "https://ext.same-assets.com/1031784112/3242063427.png",
-		imageAlt: "Spotify Profile",
-		technologies: ["React", "Express", "Spotify API", "Heroku"],
+			"A comprehensive Laravel REST API for school administration featuring student self-registration, enrollment management, and integrated PayWay KHQR payment gateway for tuition fees.",
+		link: "https://github.com/CHUNSOKNA1997/school-registration-system-api",
+		imageUrl: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=400",
+		imageAlt: "School Registration System",
+		technologies: ["Laravel", "PayWay", "REST API", "MySQL"],
 	},
 	{
-		title: "Halcyon Theme",
+		title: "Smart Parking System",
 		description:
-			"Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more.",
-		link: "https://halcyon-theme.netlify.app/",
-		imageUrl: "https://ext.same-assets.com/1031784112/3705990346.png",
-		imageAlt: "Halcyon Theme",
+			"An intelligent parking management system with real-time parking space detection, automated entry/exit tracking, and payment processing. Features include license plate recognition, occupancy monitoring, and comprehensive reporting dashboard.",
+		link: "https://github.com/CHUNSOKNA1997/smart-parking-system",
+		imageUrl: "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=400",
+		imageAlt: "Smart Parking System",
+		technologies: ["Node.js", "TypeScript", "Express", "PostgreSQL"],
 	},
 	{
-		title: "brittanychiang.com (v4)",
+		title: "Next.js REST API Boilerplate",
 		description:
-			"An old portfolio site built with Gatsby with 6k+ stars and 3k+ forks",
-		link: "https://v4.brittanychiang.com/",
-		imageUrl: "https://ext.same-assets.com/1031784112/2425062674.png",
-		imageAlt: "brittanychiang.com v4",
-		technologies: ["Gatsby", "Styled Components", "Netlify"],
+			"A production-ready boilerplate for building RESTful APIs using Next.js 15 and App Router. Includes best practices, hot toast notifications, and Tailwind CSS integration.",
+		link: "https://github.com/CHUNSOKNA1997/nextjs-api",
+		imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400",
+		imageAlt: "Next.js API",
+		technologies: ["Next.js 15", "REST API", "Tailwind CSS", "TypeScript"],
 	},
 ];
