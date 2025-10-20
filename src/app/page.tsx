@@ -5,6 +5,7 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 import Header from "@/components/Header";
 import AboutSection from "@/components/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import EducationSection from "@/components/EducationSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import Footer from "@/components/Footer";
 
@@ -28,6 +29,7 @@ export default function Home() {
 					<main id="content" className="pt-24 lg:w-1/2 lg:py-24">
 						<AboutSection />
 						<ExperienceSection />
+						<EducationSection />
 						<ProjectsSection />
 						<Footer />
 					</main>

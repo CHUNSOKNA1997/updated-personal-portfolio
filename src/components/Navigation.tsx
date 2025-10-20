@@ -6,6 +6,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
 	const sections = [
 		{ id: "about", label: "About" },
 		{ id: "experience", label: "Experience" },
+		{ id: "education", label: "Education" },
 		{ id: "projects", label: "Projects" },
 	];
 
