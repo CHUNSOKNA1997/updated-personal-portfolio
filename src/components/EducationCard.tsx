@@ -1,4 +1,5 @@
 import { Education } from "@/data/types";
+import ExternalLinkIcon from "./ExternalLinkIcon";
 
 interface EducationCardProps {
 	education: Education;
@@ -21,9 +22,25 @@ export default function EducationCard({ education }: EducationCardProps) {
 							{education.degree}
 						</div>
 					</h3>
-					<p className="mt-2 text-sm leading-normal text-slate-400">
-						{education.institution}
-					</p>
+					{education.institutionUrl ? (
+						<p className="mt-2 text-sm leading-normal">
+							<a
+								className="text-slate-400 hover:text-cyan-400 focus-visible:text-cyan-400"
+								href={education.institutionUrl}
+								target="_blank"
+								rel="noreferrer"
+							>
+								{education.institution}
+								<span className="inline-block ml-1">
+									<ExternalLinkIcon />
+								</span>
+							</a>
+						</p>
+					) : (
+						<p className="mt-2 text-sm leading-normal text-slate-400">
+							{education.institution}
+						</p>
+					)}
 				</div>
 			</div>
 		</li>

@@ -10,6 +10,21 @@ export default function Navigation({ activeSection }: NavigationProps) {
 		{ id: "projects", label: "Projects" },
 	];
 
+	const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+		e.preventDefault();
+		const element = document.getElementById(sectionId);
+		if (element) {
+			const offset = 80;
+			const elementPosition = element.getBoundingClientRect().top;
+			const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+			window.scrollTo({
+				top: offsetPosition,
+				behavior: "smooth",
+			});
+		}
+	};
+
 	return (
 		<nav className="nav hidden lg:block mt-16" aria-label="In-page jump links">
 			<ul className="mt-16 w-max">
@@ -18,6 +33,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
 						<a
 							className="group flex items-center py-3"
 							href={`#${section.id}`}
+							onClick={(e) => handleClick(e, section.id)}
 						>
 							<span
 								className={`nav-indicator mr-4 h-px transition-all group-hover:w-16 group-hover:bg-slate-200 ${
