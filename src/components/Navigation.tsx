@@ -8,6 +8,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
 		{ id: "experience", label: "Experience" },
 		{ id: "education", label: "Education" },
 		{ id: "projects", label: "Projects" },
+		{ id: "contact", label: "Contact" },
 	];
 
 	const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
@@ -26,8 +27,8 @@ export default function Navigation({ activeSection }: NavigationProps) {
 	};
 
 	return (
-		<nav className="nav hidden lg:block mt-16" aria-label="In-page jump links">
-			<ul className="mt-16 w-max">
+		<nav className="nav hidden lg:block mt-12" aria-label="In-page jump links">
+			<ul className="mt-12 w-max">
 				{sections.map((section) => (
 					<li key={section.id}>
 						<a
