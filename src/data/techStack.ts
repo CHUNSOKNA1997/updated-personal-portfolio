@@ -17,7 +17,6 @@ export const techStack: TechStackCategory[] = [
 			{ name: "TypeScript", icon: "typescript", variant: "plain" },
 			{ name: "React", icon: "react", variant: "original" },
 			{ name: "Next.js", icon: "nextjs", variant: "original" },
-			{ name: "Vue.js", icon: "vuejs", variant: "plain" },
 			{ name: "Laravel", icon: "laravel", variant: "original" },
 			{ name: "Node.js", icon: "nodejs", variant: "original-wordmark" },
 			{ name: "Express.js", icon: "express", variant: "original" },
