@@ -7,6 +7,7 @@ import AboutSection from "@/components/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import EducationSection from "@/components/EducationSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
 						<ExperienceSection />
 						<EducationSection />
 						<ProjectsSection />
+						<ContactSection />
 						<Footer />
 					</main>
 				</div>
