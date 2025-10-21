@@ -3,11 +3,11 @@ import { socialLinks } from "@/data/socialLinks";
 export default function SocialLinks() {
 	return (
 		<ul
-			className="ml-1 mt-8 flex items-center"
+			className="ml-1 mt-8 flex flex-wrap items-center gap-5"
 			aria-label="Social media"
 		>
 			{socialLinks.map((social) => (
-				<li key={social.name} className="mr-5 text-xs">
+				<li key={social.name} className="text-xs shrink-0">
 					<a
 						className="block hover:text-slate-200"
 						href={social.url}

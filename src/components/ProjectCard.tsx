@@ -15,7 +15,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 				<div className="z-10 sm:order-2 sm:col-span-6">
 					<h3>
 						<a
-							className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400 group/link text-base"
+							className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400 group/link text-base break-words"
 							href={project.link}
 							target="_blank"
 							rel="noreferrer"
@@ -27,7 +27,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 							</span>
 						</a>
 					</h3>
-					<p className="mt-2 text-sm leading-normal">
+					<p className="mt-2 text-sm leading-normal break-words">
 						{project.description}
 					</p>
 					{project.technologies && (
@@ -45,7 +45,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 					alt={project.imageAlt}
 					width={200}
 					height={48}
-					className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+					className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1 w-full sm:w-auto"
 					src={project.imageUrl}
 				/>
 			</div>
