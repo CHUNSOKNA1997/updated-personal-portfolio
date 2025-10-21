@@ -7,8 +7,10 @@ import AboutSection from "@/components/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import EducationSection from "@/components/EducationSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import SkillsSection from "@/components/SkillsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import MobileNav from "@/components/MobileNav";
 
 export default function Home() {
 	const mousePosition = useMousePosition();
@@ -23,7 +25,7 @@ export default function Home() {
 				}}
 			></div>
 
-			<div className="mx-auto max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+			<div className="mx-auto max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 pb-20 lg:pb-0 pt-20 lg:pt-12">
 				<div className="lg:flex lg:justify-between lg:gap-4">
 					<Header activeSection={activeSection} />
 
@@ -32,11 +34,14 @@ export default function Home() {
 						<ExperienceSection />
 						<EducationSection />
 						<ProjectsSection />
+						<SkillsSection />
 						<ContactSection />
 						<Footer />
 					</main>
 				</div>
 			</div>
+
+			<MobileNav activeSection={activeSection} />
 		</div>
 	);
 }

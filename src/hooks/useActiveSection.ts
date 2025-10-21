@@ -5,22 +5,30 @@ export function useActiveSection() {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			const sections = ["about", "experience", "education", "projects", "contact"];
-			const scrollPosition = window.scrollY + window.innerHeight / 3;
+			const sections = ["about", "experience", "education", "projects", "skills", "contact"];
+
+			let currentSection = "about";
+			let closestSection = "";
+			let closestDistance = Infinity;
 
 			for (const section of sections) {
 				const element = document.getElementById(section);
 				if (element) {
-					const { offsetTop, offsetHeight } = element;
-					if (
-						scrollPosition >= offsetTop &&
-						scrollPosition < offsetTop + offsetHeight
-					) {
-						setActiveSection(section);
-						break;
+					const rect = element.getBoundingClientRect();
+					const distanceFromTop = Math.abs(rect.top - 100);
+
+					if (rect.top <= 150 && distanceFromTop < closestDistance) {
+						closestDistance = distanceFromTop;
+						closestSection = section;
 					}
 				}
 			}
+
+			if (closestSection) {
+				currentSection = closestSection;
+			}
+
+			setActiveSection(currentSection);
 		};
 
 		window.addEventListener("scroll", handleScroll);

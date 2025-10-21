@@ -69,7 +69,7 @@ export default function ContactSection() {
 				className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
 				aria-label="Contact me"
 			>
-			<div className="sticky top-0 z-20 -mx-6 mb-8 w-screen bg-[#0c142c]/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0">
+			<div className="mb-8 lg:sr-only">
 				<h2 className="text-sm font-bold uppercase tracking-widest text-slate-200">
 					Contact
 				</h2>
@@ -79,7 +79,7 @@ export default function ContactSection() {
 					Have a question or want to work together? Feel free to reach out!
 				</p>
 
-				<form onSubmit={handleSubmit} className="space-y-6 max-w-xl">
+				<form onSubmit={handleSubmit} className="space-y-6 w-full">
 					<div>
 						<label htmlFor="name" className="block text-sm font-medium text-slate-200 mb-2">
 							Name
@@ -128,11 +128,11 @@ export default function ContactSection() {
 						/>
 					</div>
 
-					<div className="flex gap-3">
+					<div className="flex flex-col sm:flex-row gap-4">
 						<button
 							type="submit"
 							disabled={isSubmitting}
-							className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-br from-cyan-400/90 to-blue-500/90 px-4 py-2 text-sm font-medium text-white transition-all hover:from-cyan-400 hover:to-blue-500 hover:cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+							className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-br from-cyan-400/90 to-blue-500/90 px-6 py-3 text-sm font-medium text-white transition-all hover:from-cyan-400 hover:to-blue-500 hover:shadow-lg hover:shadow-cyan-400/20 disabled:opacity-50 disabled:cursor-not-allowed"
 						>
 							{isSubmitting ? "Sending..." : "Send Message"}
 							<svg
@@ -149,7 +149,7 @@ export default function ContactSection() {
 							href="https://t.me/chunSokna_cs"
 							target="_blank"
 							rel="noreferrer"
-							className="inline-flex items-center gap-2 rounded-lg bg-slate-800/50 px-4 py-2 text-sm font-medium text-slate-200 ring-1 ring-slate-700/50 transition-all hover:ring-cyan-400/50 hover:shadow-lg hover:shadow-cyan-400/10 hover:cursor-pointer"
+							className="inline-flex items-center justify-center gap-2 rounded-lg bg-slate-800/50 px-6 py-3 text-sm font-medium text-slate-200 ring-1 ring-slate-700/50 transition-all hover:ring-cyan-400/50 hover:bg-slate-800/70 hover:shadow-lg hover:shadow-cyan-400/10"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

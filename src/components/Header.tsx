@@ -28,7 +28,9 @@ export default function Header({ activeSection }: HeaderProps) {
 				<TechStack />
 			</div>
 
-			<SocialLinks />
+			<div className="mt-8 lg:mt-0">
+				<SocialLinks />
+			</div>
 		</header>
 	);
 }
